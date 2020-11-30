@@ -57,7 +57,10 @@ server.post('/api/dogs', (req, res) => {
   // 1- gather info from the request object
   const dogFromClient = req.body
 
-  if (!dog)
+  if (!dogFromClient.name || !dogFromClient.weight) {
+    // crude validation of req.body
+    res.status(400).json({ message: 'name and weight are required!'})
+  }
   // 2- interact with db
   const newlyCreatedDog = Dog.createNew(dogFromClient)
   // 3- send to client an appropriate reponse
