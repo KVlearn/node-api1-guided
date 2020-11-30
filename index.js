@@ -12,6 +12,9 @@ let dogs = [
 ]
 
 // helper functions to interact with the Dogs fake table
+const Dog = {
+  
+}
 
 console.log(dogs)
 
