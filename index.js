@@ -34,10 +34,11 @@ const Dog = {
     // find the dog by that id
     const dog = dogs.find(dog => dog.id === id)
     if (dog) {
+      // if dog there perform the delete and return the deleted
       dogs = dogs.filter(d => d.id !== id)
     }
-    // if dog there perform the delete and return the deleted
     // otherwise simply return `null`
+    return dog
   }
 }
 
