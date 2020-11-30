@@ -13,7 +13,8 @@ const server = express()
 server.use('*', (req, res) => {
   // req represents the request from the client
   // res represents the response we build for the client
-  res.status(404).json()
+  res.status(404).json({ message: 'not found' })
 })
 
 // start the server
+server.listen()
