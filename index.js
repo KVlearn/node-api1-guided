@@ -23,7 +23,7 @@ const Dog = {
     return dogs.find(dog => dog.id === id)
   },
   createNew(dog) {
-
+    // make a dog object using dog from client
   },
 }
 
