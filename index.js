@@ -10,6 +10,8 @@ const server = express()
 // endpoints for Adopters
 
 // catch-all endpoint
-
+server.use('*', (req, res) => {
+  // req represents the request from the client
+})
 
 // start the server
