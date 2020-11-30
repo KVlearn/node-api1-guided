@@ -24,8 +24,6 @@ const Dog = {
   },
 }
 
-console.log(dogs)
-
 // endpoints for Dogs
 server.get('/api/dogs', (req, res) => {
   // 1- gather info from the request object
