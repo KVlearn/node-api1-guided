@@ -17,7 +17,7 @@ const Dog = {
     return dogs
   },
   getById(id) {
-
+    
   },
   createNew() {
 
@@ -33,8 +33,9 @@ server.get('/api/dogs', (req, res) => {
   res.status(200).json(dogs)
 })
 server.get('/api/dogs/:id', (req, res) => {
-    // 1- gather info from the request object
+  // 1- gather info from the request object
   // 2- interact with db
+  // 3- send to client an appropriate reponse
 })
 
 // endpoints for Adopters
