@@ -24,6 +24,7 @@ const Dog = {
   },
   createNew(dog) {
     // make a dog object using dog from client
+    const 
     // add it to the dogs array
     // return the newly created dog (with all the bits)
   },
