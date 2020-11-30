@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/LambdaSchool/node-api1-guided#readme",
   "devDependencies": {
-    "eslint": "^7.14.0"
+    "eslint": "^7.14.0",
+    "nodemon": "^2.0.6"
   },
   "dependencies": {
     "express": "^4.17.1",
