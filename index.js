@@ -17,7 +17,7 @@ const Dog = {
     return dogs
   },
   getById(id) {
-    
+    // ?
   },
   createNew() {
 
