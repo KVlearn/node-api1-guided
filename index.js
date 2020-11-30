@@ -32,8 +32,9 @@ server.get('/api/dogs', (req, res) => {
   // 3- send to client an appropriate reponse
   res.status(200).json(dogs)
 })
-server.get('/api/dogs/:id', (req, res) => {
+server.get('/api/dogs/:id/:foo/:bar', (req, res) => {
   // 1- gather info from the request object
+  const id = req.params
   // 2- interact with db
   // 3- send to client an appropriate reponse
 })
