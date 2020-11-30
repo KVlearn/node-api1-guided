@@ -22,7 +22,7 @@ const Dog = {
   getById(id) {
     return dogs.find(dog => dog.id === id)
   },
-  createNew() {
+  createNew(dog) {
 
   },
 }
