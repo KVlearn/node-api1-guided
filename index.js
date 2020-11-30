@@ -17,7 +17,7 @@ const Dog = {
     return dogs
   },
   getById(id) {
-    // ?
+    return dogs.find(dog => dog.id === id)
   },
   createNew() {
 
