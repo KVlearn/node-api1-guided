@@ -83,6 +83,11 @@ server.delete('/api/dogs/:id', (req, res) => {
   // 2- interact with db
   const deleted = Dog.delete(id)
   // 3- send appropriate response
+  if (deleted) {
+    res.status(200).json(deleted)
+  } else {
+    
+  }
 })
 
 // endpoints for Adopters
