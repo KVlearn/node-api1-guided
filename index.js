@@ -31,8 +31,9 @@ const Dog = {
     return newDog
   },
   delete(id) {
-    // perform the delete and return the deleted
-    // OR simply return `null`
+    // find the dog by that id
+    // if dog there perform the delete and return the deleted
+    // otherwise simply return `null`
   }
 }
 
