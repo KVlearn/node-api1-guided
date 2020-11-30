@@ -44,16 +44,15 @@ const Dog = {
     const dog = dogs.find(dog => dog.id === id)
     if (!dog) {
       return null
-    } else {
-      const updatedDog = { id, ...changes }
-      // smash the dogs array with a new one
-      dogs = dogs.map(d => {
-        if (d.id === id) return updatedDog
-        return d
-      })
-      // return the updated dog
-      return updatedDog
     }
+    const updatedDog = { id, ...changes }
+    // smash the dogs array with a new one
+    dogs = dogs.map(d => {
+      if (d.id === id) return updatedDog
+      return d
+    })
+    // return the updated dog
+    return updatedDog
   }
 }
 
