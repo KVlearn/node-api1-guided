@@ -44,7 +44,12 @@ server.get('/api/dogs/:id', (req, res) => {
     res.status(404).json({ message: 'dog not found with id ' + id })
   }
 })
-server.post('/api/dogs')
+server.post('/api/dogs', (req, res) => {
+  // 
+  // 1- gather info from the request object
+  // 2- interact with db
+  // 3- send to client an appropriate reponse
+}) 
 
 // endpoints for Adopters
 
