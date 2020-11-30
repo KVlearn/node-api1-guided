@@ -86,7 +86,7 @@ server.delete('/api/dogs/:id', (req, res) => {
   if (deleted) {
     res.status(200).json(deleted)
   } else {
-    
+    res.status(404).json({ message: 'dog not found with id ' + id })
   }
 })
 
