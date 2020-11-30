@@ -92,7 +92,10 @@ server.delete('/api/dogs/:id', (req, res) => {
 server.put('/api/dogs/:id', (req, res) => {
   const changes = req.body
   const { id } = req.params
-  
+  const updatedDog = Dog.update(id, changes)
+  if (updatedDog) {
+    
+  }
 })
 // endpoints for Adopters
 
