@@ -30,6 +30,9 @@ const Dog = {
     // c- return the newly created dog (with all the bits)
     return newDog
   },
+  delete(id) {
+    
+  }
 }
 
 // endpoints for Dogs
