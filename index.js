@@ -5,3 +5,11 @@ const express = require('express')
 
 const server = express()
 
+// endpoints for Dogs
+
+// endpoints for Adopters
+
+// catch-all endpoint
+
+
+// start the server
