@@ -59,13 +59,14 @@ server.post('/api/dogs', (req, res) => {
 
   if (!dogFromClient.name || !dogFromClient.weight) {
     // crude validation of req.body
-    res.status(400).json({ message: 'name and weight are required!'})
+    res.status(400).json({ message: 'name and weight are required!' })
+  } else {
+    // 2- interact with db
+    const newlyCreatedDog = Dog.createNew(dogFromClient)
+    // 3- send to client an appropriate reponse
+    res.status(201).json(newlyCreatedDog)
   }
-  // 2- interact with db
-  const newlyCreatedDog = Dog.createNew(dogFromClient)
-  // 3- send to client an appropriate reponse
-  res.status(201).json(newlyCreatedDog)
-}) 
+})
 
 // endpoints for Adopters
 
