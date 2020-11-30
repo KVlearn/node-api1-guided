@@ -29,8 +29,8 @@ server.get('/api/dogs', (req, res) => {
   // 1- gather info from the request object
   // 2- interact with db
   const dogs = Dog.getAll()
-  console.log('all the dogs', dogs)
   // 3- send to client an appropriate reponse
+  res.status(200).json(dogs)
 })
 
 // endpoints for Adopters
