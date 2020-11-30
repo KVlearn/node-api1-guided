@@ -33,7 +33,9 @@ const Dog = {
   delete(id) {
     // find the dog by that id
     const dog = dogs.find(dog => dog.id === id)
-    dogs = dogs.filter(d => )
+    if (dog) {
+      dogs = dogs.filter(d => d.id !== id)
+    }
     // if dog there perform the delete and return the deleted
     // otherwise simply return `null`
   }
