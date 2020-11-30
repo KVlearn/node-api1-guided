@@ -2,6 +2,7 @@
 console.log('hello Web 36!')
 
 const express = require('express')
+const shortid = require('shortid')
 
 const server = express()
 
