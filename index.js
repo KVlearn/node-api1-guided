@@ -47,7 +47,7 @@ const Dog = {
     } else {
       // smash the dogs array with a new one
       dogs = dogs.map(d => {
-        
+        if (d.id === id) return { id, }
       })
     }
   }
