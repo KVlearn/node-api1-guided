@@ -39,6 +39,9 @@ const Dog = {
     }
     // otherwise simply return `null`
     return dog
+  },
+  update(id, changes) {
+    const dog = dogs.find(dog => dog.id === id)
   }
 }
 
@@ -95,6 +98,7 @@ server.put('/api/dogs/:id', (req, res) => {
   const { id } = req.params
   // 2- interact with db through helper
   const updatedDog = Dog.update(id, changes)
+  // 3- send res
   if (updatedDog) {
     res.status(200).json(updatedDog)
   } else {
