@@ -90,11 +90,15 @@ server.delete('/api/dogs/:id', (req, res) => {
   }
 })
 server.put('/api/dogs/:id', (req, res) => {
+  // 1- pull info from req
   const changes = req.body
   const { id } = req.params
+  // 2- interact with db through helper
   const updatedDog = Dog.update(id, changes)
   if (updatedDog) {
-    
+    res.status(200).json(updatedDog)
+  } else {
+    res.status(404).json({ message: 'dog not found with id ' + id })
   }
 })
 // endpoints for Adopters
