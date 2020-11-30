@@ -27,6 +27,7 @@ const Dog = {
 console.log(dogs)
 
 // endpoints for Dogs
+server.get('/api/dogs')
 
 // endpoints for Adopters
 
