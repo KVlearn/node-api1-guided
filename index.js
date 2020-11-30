@@ -28,6 +28,7 @@ const Dog = {
     // b- add it to the dogs array
     dogs.push(newDog)
     // c- return the newly created dog (with all the bits)
+    return newDog
   },
 }
 
