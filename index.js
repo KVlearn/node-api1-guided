@@ -56,10 +56,12 @@ server.post('/api/dogs', (req, res) => {
   // EXPRESS, BY DEFAULT IS NOT PARSING THE BODY OF THE REQUEST
   // 1- gather info from the request object
   const dogFromClient = req.body
+
+  if (!dog)
   // 2- interact with db
   const newlyCreatedDog = Dog.createNew(dogFromClient)
   // 3- send to client an appropriate reponse
-  res.status(201)
+  res.status(201).json(newlyCreatedDog)
 }) 
 
 // endpoints for Adopters
