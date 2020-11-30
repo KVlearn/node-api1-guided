@@ -13,7 +13,15 @@ let dogs = [
 
 // helper functions to interact with the Dogs fake table
 const Dog = {
-  
+  getAll() {
+
+  },
+  getById(id) {
+
+  },
+  createNew() {
+
+  },
 }
 
 console.log(dogs)
