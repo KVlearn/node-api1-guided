@@ -55,6 +55,7 @@ server.get('/api/dogs/:id', (req, res) => {
 server.post('/api/dogs', (req, res) => {
   // EXPRESS, BY DEFAULT IS NOT PARSING THE BODY OF THE REQUEST
   // 1- gather info from the request object
+  const dogFromClient = req.body
   // 2- interact with db
   // 3- send to client an appropriate reponse
 }) 
