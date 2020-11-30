@@ -11,6 +11,8 @@ let dogs = [
   { id: shortid.generate(), name: 'Captain', weight: 25, adopter_id: null },
 ]
 
+// helper functions to interact with the Dogs fake table
+
 console.log(dogs)
 
 // endpoints for Dogs
