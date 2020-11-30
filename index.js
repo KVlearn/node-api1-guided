@@ -57,6 +57,7 @@ server.post('/api/dogs', (req, res) => {
   // 1- gather info from the request object
   const dogFromClient = req.body
   // 2- interact with db
+  const newlyCreatedDog = Dog.createNew(dogFromClient)
   // 3- send to client an appropriate reponse
 }) 
 
