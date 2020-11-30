@@ -6,6 +6,9 @@ const shortid = require('shortid')
 
 const server = express()
 
+// configure our server (PLUG FUNCTIONALITY)
+server.use(express.json())
+
 // fake Dogs table inside a fake Lamdba Shelter db
 let dogs = [
   { id: shortid.generate(), name: 'Captain', weight: 25, adopter_id: null },
