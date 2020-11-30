@@ -7,7 +7,7 @@ const shortid = require('shortid')
 const server = express()
 
 // configure our server (PLUG FUNCTIONALITY)
-server.use(express.json())
+server.use(express.json()) // adds the ability to read the body of the request as JSON
 
 // fake Dogs table inside a fake Lamdba Shelter db
 let dogs = [
