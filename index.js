@@ -29,6 +29,9 @@ console.log(dogs)
 // endpoints for Dogs
 server.get('/api/dogs', (req, res) => {
   // 1- gather info from the request object
+  // 2- interact with db
+  const dogs = Dog.getAll()
+  // 3- send to client an appropriate reponse
 })
 
 // endpoints for Adopters
