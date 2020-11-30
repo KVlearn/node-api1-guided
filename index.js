@@ -6,7 +6,9 @@ const express = require('express')
 const server = express()
 
 // fake db
-let dogs = []
+let dogs = [
+  { id: '?', name: 'Fido', weight: 25, adopter_id: null },
+]
 
 // endpoints for Dogs
 
