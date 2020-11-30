@@ -71,6 +71,7 @@ server.delete('/api/dogs/:id', (req, res) => {
   // 1- gather info from the request object
   const { id } = req.params
   // 2- interact with db
+  const deleted = Dog.delete(id)
   // 3- send appropriate response
 })
 
