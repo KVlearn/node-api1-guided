@@ -17,4 +17,6 @@ server.use('*', (req, res) => {
 })
 
 // start the server
-server.listen()
+server.listen(5000, () => {
+  console.log('listening on port 5000')
+})
