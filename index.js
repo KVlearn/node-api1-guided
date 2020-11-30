@@ -45,7 +45,10 @@ const Dog = {
     if (!dog) {
       return null
     } else {
-      
+      // smash the dogs array with a new one
+      dogs = dogs.map(d => {
+        
+      })
     }
   }
 }
