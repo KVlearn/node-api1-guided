@@ -23,10 +23,11 @@ const Dog = {
     return dogs.find(dog => dog.id === id)
   },
   createNew(dog) {
-    // make a dog object using dog from client
-    const newDog = { id: shortid.generate(), adopter_id: null,  }
-    // add it to the dogs array
-    // return the newly created dog (with all the bits)
+    // a- make a dog object using dog from client
+    const newDog = { id: shortid.generate(), adopter_id: null, ...dog }
+    // b- add it to the dogs array
+    dogs.push(newDog)
+    // c- return the newly created dog (with all the bits)
   },
 }
 
