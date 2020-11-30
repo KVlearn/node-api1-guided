@@ -40,6 +40,8 @@ server.get('/api/dogs/:id', (req, res) => {
   // 3- send to client an appropriate reponse
   if (dog) {
     res.status(200).json(dog)
+  } else {
+    res.status(404).json({ message: 'dog not found with id ' + id })
   }
 })
 
