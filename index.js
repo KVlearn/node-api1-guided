@@ -45,10 +45,14 @@ const Dog = {
     if (!dog) {
       return null
     } else {
+      const updatedDog = { id, ...changes }
       // smash the dogs array with a new one
       dogs = dogs.map(d => {
-        if (d.id === id) return { id, }
+        if (d.id === id) return { id, ...changes }
+        return d
       })
+      // return the updated dog
+      return { id, ...changes }
     }
   }
 }
