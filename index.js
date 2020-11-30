@@ -31,7 +31,8 @@ const Dog = {
     return newDog
   },
   delete(id) {
-    
+    // perform the delete and return the deleted
+    // OR simply return `null`
   }
 }
 
