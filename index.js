@@ -48,11 +48,11 @@ const Dog = {
       const updatedDog = { id, ...changes }
       // smash the dogs array with a new one
       dogs = dogs.map(d => {
-        if (d.id === id) return { id, ...changes }
+        if (d.id === id) return updatedDog
         return d
       })
       // return the updated dog
-      return { id, ...changes }
+      return updatedDog
     }
   }
 }
