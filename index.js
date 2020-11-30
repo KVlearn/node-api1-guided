@@ -89,7 +89,9 @@ server.delete('/api/dogs/:id', (req, res) => {
     res.status(404).json({ message: 'dog not found with id ' + id })
   }
 })
-
+server.put('/api/dogs/:id', (req, res) => {
+  
+})
 // endpoints for Adopters
 
 // catch-all endpoint
