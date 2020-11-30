@@ -67,6 +67,7 @@ server.post('/api/dogs', (req, res) => {
     res.status(201).json(newlyCreatedDog)
   }
 })
+server.delete('')
 
 // endpoints for Adopters
 
