@@ -5,6 +5,9 @@ const express = require('express')
 
 const server = express()
 
+// fake db
+let dogs = []
+
 // endpoints for Dogs
 
 // endpoints for Adopters
