@@ -32,6 +32,7 @@ server.get('/api/dogs', (req, res) => {
   // 3- send to client an appropriate reponse
   res.status(200).json(dogs)
 })
+server.get('/api/dogs/:id')
 
 // endpoints for Adopters
 
