@@ -36,8 +36,11 @@ server.get('/api/dogs/:id', (req, res) => {
   // 1- gather info from the request object
   const { id } = req.params
   // 2- interact with db
-  const dog = Dog.get
+  const dog = Dog.getById(id)
   // 3- send to client an appropriate reponse
+  if (dog) {
+    res.status(200).json(dog)
+  }
 })
 
 // endpoints for Adopters
