@@ -59,6 +59,7 @@ server.post('/api/dogs', (req, res) => {
   // 2- interact with db
   const newlyCreatedDog = Dog.createNew(dogFromClient)
   // 3- send to client an appropriate reponse
+  res.status(201)
 }) 
 
 // endpoints for Adopters
