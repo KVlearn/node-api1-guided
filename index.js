@@ -24,7 +24,7 @@ const Dog = {
   },
   createNew(dog) {
     // make a dog object using dog from client
-    const 
+    const newDog = { id: shortid.generate(), adopter_id: null,  }
     // add it to the dogs array
     // return the newly created dog (with all the bits)
   },
