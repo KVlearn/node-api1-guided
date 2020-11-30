@@ -8,7 +8,7 @@ const server = express()
 
 // fake Dogs table inside a fake Lamdba Shelter db
 let dogs = [
-  { id: shortid.generate(), name: 'Fido', weight: 25, adopter_id: null },
+  { id: shortid.generate(), name: 'Captain', weight: 25, adopter_id: null },
 ]
 
 console.log(dogs)
