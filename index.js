@@ -42,6 +42,11 @@ const Dog = {
   },
   update(id, changes) {
     const dog = dogs.find(dog => dog.id === id)
+    if (!dog) {
+      return null
+    } else {
+      
+    }
   }
 }
 
